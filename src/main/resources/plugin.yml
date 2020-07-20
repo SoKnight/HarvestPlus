@@ -1,0 +1,22 @@
+name: ${project.name}
+main: ru.soknight.harvestplus.HarvestPlus
+version: ${project.version}
+api-version: 1.16
+author: SoKnight
+depend: [SKLibrary]
+description: ${project.description}
+
+commands:
+  harvestplus:
+    aliases: [hp]
+    description: Main admin plugin command
+    usage: /harvestplus help
+
+permissions:
+  # Allows to see plugin help page
+  harvestplus.command.help:
+    default: op
+
+  # Allows to reload plugin
+  harvestplus.command.reload:
+    default: op
